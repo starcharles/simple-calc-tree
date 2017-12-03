@@ -11,7 +11,6 @@ module STree
     end
 
     def exec_calculation
-      # binding.pry
       root.calculate
     end
   end

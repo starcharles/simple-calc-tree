@@ -2,10 +2,6 @@ module STree
   class Node
     attr_accessor :rightNode, :leftNode, :value
 
-    def initialize
-
-    end
-
     def calculate
       left = leftNode
       right = rightNode
