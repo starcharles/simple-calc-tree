@@ -1,9 +1,6 @@
-require('./node')
-
 module STree
   class Tree
-
-    attr_accessor :root
+    attr_accessor :root, :height
 
     # errors to throw
     class InvalidRootError < StandardError; end
@@ -13,9 +10,9 @@ module STree
       @root  = root
     end
 
-    def calculate
-
+    def exec_calculation
+      # binding.pry
+      root.calculate
     end
   end
-
 end

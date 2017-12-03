@@ -1,3 +1,3 @@
-module MoneyTree
-  VERSION = "0.9.0"
+module STree
+  VERSION = "0.0.1"
 end

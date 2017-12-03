@@ -1,23 +1,25 @@
-require('./lib/stree')
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+
+require "pry-byebug"
+require_relative "lib/stree"
+
 # syntax_tree
-
 # root
-
 # left1 right1
 
-root = Node.new
-tree = Tree.new(root)
+root = STree::Node.new
+tree = STree::Tree.new(root)
 
-right1 = Node.new
-left1 = Node.new
+right1 = STree::Node.new
+left1 = STree::Node.new
 
-root.value = OP_PLUS
+root.value = STree::Operations::OP_ADD
 right1.value = 1
 left1.value = 2
 
 root.rightNode = right1
 root.leftNode = left1
 
-
-p tree.calculate
+p tree.exec_calculation
 
