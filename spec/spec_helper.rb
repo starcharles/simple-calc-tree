@@ -1,3 +1,2 @@
-require 'simplecov'
-require 'money-tree'
+require 'stree'
 require 'pry'
